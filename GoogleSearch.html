@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Search</title>
+        <link rel="stylesheet" type="text/css" href="GoogleColors.css"></link>
+        <style>
+            body {
+                background-image: url("Search\ background.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            #OtherSearches {
+                background-color: rgb(209, 96, 81);
+                color: black;
+                text-align: right;
+                font-size: 20px;
+            }
+
+            #OtherSearches a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+            }
+
+            #Search {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 100px;
+            }
+
+            #search-bar {
+                color: black;
+                border-color: none;
+                padding: 15px;
+                width: 600px;
+                font-size: 20px;
+                font-style: sans-serif;
+
+            }
+
+            #search-bar:hover {
+                background-color:rgb(146, 160, 185);
+            }
+
+            .buttons {
+                color: white;
+                background-color: black;
+                border-radius: 25px;
+                padding: 15px 30px;
+            }
+
+            .buttons:hover {
+                background-color: rgb(136, 28, 28);
+            }
+
+            
+
+
+
+        </style>
+    </head>
+    <body>
+        <div id="OtherSearches"> 
+            <a href="ImageSearch.html">Image Search</a>
+            <a href="AdvancedSearch.html">Advanced Search</a>
+        </div>
+        <div class="Google">
+        <span>G</span>
+        <span>O</span>
+        <span>O</span>
+        <span>G</span>
+        <span>L</span>
+        <span>E</span>
+        </div>
+        <div id="Search">
+            <form action="https://google.com/search">
+                <input type="text" name="q" id="search-bar" >
+                <input type="submit" class="buttons" value="Google Search" >
+                <input type="submit" class="buttons" value="Im Feeling Lucky">
+            </form>
+        </div>
+    </body>
+</html>

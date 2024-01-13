@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="AdvancedSearch.css"></link>
+        <link rel="stylesheet" href="GoogleColors.css"></link>
+        <style>
+            body {
+                background-image: url(space.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 0;
+                padding: 0;
+
+            }
+
+            #advanced-search-form {
+                width: fit-content;
+                margin: auto;
+                padding-top: 100px;
+                position: relative; /* Create a stacking context for z-index */
+                z-index: 1; /* Ensure the form is above the blurry background */
+                padding: 0; /* Add padding to ensure the backdrop filter effect is visible */
+                border: 1px solid #1a1111; /* Add a border to make the form stand out */
+                background: rgba(14, 8, 8, 0.8); /* Add a semi-transparent white background to maintain clarity */
+            }
+            }
+
+            #advanced-search-form::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: inherit; /* Inherit the background from the body */
+                z-index: -1; /* Place the pseudo-element behind the form */
+                backdrop-filter: blur(20px); /* Adjust the blur value as needed */
+            }
+
+            .Form tr th {
+                float: left;
+                font-size: 35px;
+                font-family: sans-serif;
+                font-style: bold;
+                color: rgb(150, 147, 147);
+            }
+
+            .OtherSearches {
+                background-color: rgb(209, 96, 81);
+                font-size: 15px;
+                padding-top: 0;
+                color: white;
+            }
+
+            .OtherSearches tr th p {
+                float: left;
+                padding-left: 20px;
+            }
+
+            .OtherSearches tr th a {
+                float: right;
+                padding-right: 20px;
+                text-decoration: none;
+                color: white;
+            }
+
+            .input-bars {
+                width: 300px;
+            }
+
+            .search {
+                color: black;
+                border-radius: 15px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <table style="width:100%" class="OtherSearches">
+            <tr>
+                <th><p>Google Advanced Search</p></th>
+                <th> <a href="GoogleSearch.html">Google Search</a> </th>
+            </tr>
+        </table>
+        <div class="Google">
+            <span>G</span>
+            <span>O</span>
+            <span>O</span>
+            <span>G</span>
+            <span>L</span>
+            <span>E</span>
+        </div>
+
+        <div id="Adv-Search">
+            <span>A</span>
+            <span>D</span>
+            <span>V</span>
+            <span>A</span>
+            <span>N</span>
+            <span>C</span>
+            <span>E</span>
+            <span>D</span>
+            <span>&nbsp;</span>
+            <span>S</span>
+            <span>E</span>
+            <span>A</span>
+            <span>R</span>
+            <span>C</span>
+            <span>H</span>
+        </div>
+        <form id="advanced-search-form" action="https://www.google.com/search" method="GET">
+            <table class="Form">
+                <tr>
+                    <th><label for="all-words">1. Find pages with… “all these words:”</label></th>
+                    <td><input type="text" id="all-words" class="input-bars" name="q"></td>
+                </tr>
+                <tr>
+                    <th><label for="exact-phrase">2. Find pages with… “this exact word or phrase:”</label></th>
+                    <td><input type="text" id="exact-phrase" class="input-bars" name="as_epq"></td>
+                </tr>
+                <tr>
+                    <th><label for="any-words">3. Find pages with… “any of these words:”</label></th>
+                    <td><input type="text" id="any-words" class="input-bars" name="as_oq"> </td>
+                </tr>
+                <tr>
+                    <th><label for="none-words">4. Find pages with… “none of these words:”</label></th>
+                    <td><input type="text" id="none-words" class="input-bars" name="as_eq"></td>
+                </tr>
+                <tr>
+                    <th><button type="submit" class="search" id="advanced-search-button">Advanced Search</button></th>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

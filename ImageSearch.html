@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet"  href="imagesearch.css"></link>
+        <style>
+            body {
+                background-image: url('image background.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            table {
+                background-color: rgb(209, 96, 81);
+                padding: 0px 10px;
+                font-size: 10px;
+
+            }
+
+            table tr p{
+                color: white;
+                float: left;
+            }
+            table tr a{
+                text-decoration: none;
+                color: white;
+                float: right;
+            }
+
+            .search {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 100px;
+
+            }
+
+            .search-button {
+                border-radius: 15px;
+                margin: 0 10px;
+            }
+
+            .search-button:hover {
+                cursor: pointer;
+                background-color: rgb(21, 71, 67); 
+            }
+
+            #search-bar {
+                width: 500px;
+                border-radius: 15px;
+                height: 15px;
+                font-family: sans-serif;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <table style="width:100%">
+        <tr>
+            <th><p>Google Image Search</p></th>
+            <th> <a href="GoogleSearch.html">Google Search</a> </th>
+        </tr>
+        </table>
+        <h1>
+            <span>G</span>
+            <span>O</span>
+            <span>O</span>
+            <span>G</span>
+            <span>L</span>
+            <span>E</span>
+            <span>:</span>
+            <span>&nbsp;</span>
+            <span>I</span>
+            <span>M</span>
+            <span>A</span>
+            <span>G</span>
+            <span>E</span>
+        </h1>
+        <form class="search" action="https://www.google.com/search" method="GET">
+            <input type="text" id="search-bar" name="q" placeholder="Search images...">
+            <input type="hidden" name="tbm" value="isch"> <!-- This specifies image search mode -->
+            <input type="submit" class="search-button" value="Google Image Search">
+            <input type="submit" class="search-button" value="Im Feeling Lucky">
+        </form>
+    </body>
+</html>

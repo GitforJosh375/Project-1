@@ -1,0 +1,30 @@
+.Google {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+.Google span {
+  font-size: 250px;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: black;
+  /* Add more &:nth-child(n) rules if needed */
+}
+.Google span:nth-child(1) {
+  color: green;
+}
+.Google span:nth-child(2) {
+  color: darkcyan;
+}
+.Google span:nth-child(3) {
+  color: lightcoral;
+}
+.Google span:nth-child(4) {
+  color: saddlebrown;
+}
+.Google span:nth-child(5) {
+  color: yellowgreen;
+}
+.Google span:nth-child(6) {
+  color: deeppink;
+}/*# sourceMappingURL=GoogleColors.css.map */

@@ -1,0 +1,59 @@
+#Adv-Search {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+  }
+  #Adv-Search span {
+    font-size: 80px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    /* Add more &:nth-child(n) rules if needed */
+  }
+  #Adv-Search span:nth-child(1) {
+    color: green;
+  }
+  #Adv-Search span:nth-child(2) {
+    color: darkcyan;
+  }
+  #Adv-Search span:nth-child(3) {
+    color: lightcoral;
+  }
+  #Adv-Search span:nth-child(4) {
+    color: saddlebrown;
+  }
+  #Adv-Search span:nth-child(5) {
+    color: yellowgreen;
+  }
+  #Adv-Search span:nth-child(6) {
+    color: deeppink;
+  }
+  #Adv-Search span:nth-child(7) {
+    color: rgb(88, 160, 21);
+  }
+  #Adv-Search span:nth-child(8) {
+    color: rgb(110, 21, 21);
+  }
+  #Adv-Search span:nth-child(9) {
+    color: rgb(197, 143, 81);
+  }
+  #Adv-Search span:nth-child(10) {
+    color: rgb(14, 95, 45);
+  }
+  #Adv-Search span:nth-child(11) {
+    color: rgb(110, 19, 98);
+  }
+  #Adv-Search span:nth-child(12) {
+    color: rgb(101, 72, 204);
+  }
+  #Adv-Search span:nth-child(13) {
+    color: rgb(125, 126, 94);
+  }
+  #Adv-Search span:nth-child(14) {
+    color: rgb(133, 73, 115);
+  }
+  #Adv-Search span:nth-child(15) {
+    color: rgb(166, 196, 60);
+  }/*# sourceMappingURL=imagesearch.css.map */

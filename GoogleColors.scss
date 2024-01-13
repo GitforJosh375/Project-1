@@ -1,0 +1,36 @@
+.Google {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+
+    span {
+        font-size: 250px;
+
+        &:nth-child(1) {
+            color: green;
+        }
+
+        &:nth-child(2) {
+            color: darkcyan;
+        }
+
+        &:nth-child(3) {
+            color: lightcoral;
+        }
+
+        &:nth-child(4) {
+            color: saddlebrown;
+        }
+
+        &:nth-child(5) {
+            color: yellowgreen;
+        }
+
+        &:nth-child(6) {
+            color: deeppink;
+        }
+
+        /* Add more &:nth-child(n) rules if needed */
+    }
+}

@@ -1,0 +1,52 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  
+}
+h1 span {
+  font-size: 175px;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: black;
+  /* Add more &:nth-child(n) rules if needed */
+}
+h1 span:nth-child(1) {
+  color: green;
+}
+h1 span:nth-child(2) {
+  color: darkcyan;
+}
+h1 span:nth-child(3) {
+  color: lightcoral;
+}
+h1 span:nth-child(4) {
+  color: saddlebrown;
+}
+h1 span:nth-child(5) {
+  color: yellowgreen;
+}
+h1 span:nth-child(6) {
+  color: deeppink;
+}
+h1 span:nth-child(7) {
+  color: rgb(88, 160, 21);
+}
+h1 span:nth-child(8) {
+  color: rgb(110, 21, 21);
+}
+h1 span:nth-child(9) {
+  color: rgb(197, 143, 81);
+}
+h1 span:nth-child(10) {
+  color: rgb(14, 95, 45);
+}
+h1 span:nth-child(11) {
+  color: rgb(110, 19, 98);
+}
+h1 span:nth-child(12) {
+  color: rgb(101, 72, 204);
+}
+h1 span:nth-child(13) {
+  color: rgb(223, 226, 11);
+}/*# sourceMappingURL=imagesearch.css.map */
